@@ -1,0 +1,110 @@
+7.1s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.1s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.1s 3 0.00s - to python to disable frozen modules.
+7.1s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.0s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s 7 0.00s - to python to disable frozen modules.
+8.0s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+29.5s 9 2025-05-17 12:43:13.136065: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+29.5s 10 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+29.5s 11 E0000 00:00:1747485793.365853      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+29.5s 12 E0000 00:00:1747485793.440222      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+29.7s 13 2025-05-17 12:43:13.136065: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+29.7s 14 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+29.7s 15 E0000 00:00:1747485793.365853      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+29.7s 16 E0000 00:00:1747485793.440222      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+49.1s 17 /usr/local/lib/python3.11/dist-packages/transformers/convert_slow_tokenizer.py:559: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+49.1s 18 warnings.warn(
+52.3s 19 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+52.3s 20 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+53.0s 21 START TRAINING:
+53.0s 22 ----Epoch 1/10----
+235.5s 23 Training Loss: 1.1359
+243.6s 24 Confusion Matrix:
+243.6s 25 [[41  0 27  0]
+243.6s 26 [17  0 10  0]
+243.6s 27 [ 0  0 41  0]
+243.6s 28 [ 5  0 13  0]]
+243.6s 29 Validation Loss: {'avg_loss': 1.2941199235427074, 'accuracy': 0.5324675324675324, 'precision': 0.4073149073149073, 'recall': 0.5324675324675324, 'f1_score': 0.44178300302519596}
+243.6s 30 ----Epoch 2/10----
+429.2s 31 Training Loss: 0.9462
+437.2s 32 Confusion Matrix:
+437.2s 33 [[53  0 15  0]
+437.2s 34 [25  0  2  0]
+437.2s 35 [ 0  0 41  0]
+437.2s 36 [13  0  5  0]]
+437.2s 37 Validation Loss: {'avg_loss': 0.9273678301236569, 'accuracy': 0.6103896103896104, 'precision': 0.430434644720359, 'recall': 0.6103896103896104, 'f1_score': 0.5042873792873793}
+437.2s 38 ----Epoch 3/10----
+622.6s 39 Training Loss: 0.8580
+630.5s 40 Confusion Matrix:
+630.5s 41 [[33 28  7  0]
+630.5s 42 [ 9 16  2  0]
+630.5s 43 [ 1  0 40  0]
+630.5s 44 [13  3  2  0]]
+630.5s 45 Validation Loss: {'avg_loss': 0.8763004961686257, 'accuracy': 0.577922077922078, 'precision': 0.5286998745339528, 'recall': 0.577922077922078, 'f1_score': 0.5423467401027008}
+630.5s 46 ----Epoch 4/10----
+815.8s 47 Training Loss: 0.7830
+823.8s 48 Confusion Matrix:
+823.8s 49 [[65  0  3  0]
+823.8s 50 [26  0  1  0]
+823.8s 51 [ 3  0 38  0]
+823.8s 52 [15  0  3  0]]
+823.8s 53 Validation Loss: {'avg_loss': 0.8195265485690191, 'accuracy': 0.6688311688311688, 'precision': 0.4881342918040165, 'recall': 0.6688311688311688, 'f1_score': 0.5595848114571016}
+823.8s 54 ----Epoch 5/10----
+1009.4s 55 Training Loss: 0.6881
+1017.3s 56 Confusion Matrix:
+1017.3s 57 [[48  6 14  0]
+1017.3s 58 [12 12  3  0]
+1017.3s 59 [ 0  0 41  0]
+1017.3s 60 [11  0  7  0]]
+1017.3s 61 Validation Loss: {'avg_loss': 0.9125921512261416, 'accuracy': 0.6558441558441559, 'precision': 0.5833335678406101, 'recall': 0.6558441558441559, 'f1_score': 0.6044221422665836}
+1017.3s 62 ----Epoch 6/10----
+1202.8s 63 Training Loss: 0.5669
+1210.8s 64 Confusion Matrix:
+1210.8s 65 [[62  1  5  0]
+1210.8s 66 [16  9  1  1]
+1210.8s 67 [ 3  0 38  0]
+1210.8s 68 [11  1  5  1]]
+1210.8s 69 Validation Loss: {'avg_loss': 0.7952118626771829, 'accuracy': 0.7142857142857143, 'precision': 0.7059280156803752, 'recall': 0.7142857142857143, 'f1_score': 0.6617642591326801}
+1210.8s 70 ----Epoch 7/10----
+1396.2s 71 Training Loss: 0.3872
+1404.2s 72 Confusion Matrix:
+1404.2s 73 [[56  9  1  2]
+1404.2s 74 [ 6 18  1  2]
+1404.2s 75 [ 7  1 31  2]
+1404.2s 76 [ 5  4  2  7]]
+1404.2s 77 Validation Loss: {'avg_loss': 0.83447819078962, 'accuracy': 0.7272727272727273, 'precision': 0.7315165770522913, 'recall': 0.7272727272727273, 'f1_score': 0.7252258426441882}
+1404.2s 78 ----Epoch 8/10----
+1589.6s 79 Training Loss: 0.2061
+1597.6s 80 Confusion Matrix:
+1597.6s 81 [[57  8  1  2]
+1597.6s 82 [ 5 19  1  2]
+1597.6s 83 [ 2  1 36  2]
+1597.6s 84 [ 6  2  4  6]]
+1597.6s 85 Validation Loss: {'avg_loss': 0.854643681898522, 'accuracy': 0.7662337662337663, 'precision': 0.7572356215213358, 'recall': 0.7662337662337663, 'f1_score': 0.7593518058683066}
+1597.6s 86 ----Epoch 9/10----
+1782.9s 87 Training Loss: 0.0873
+1790.9s 88 Confusion Matrix:
+1790.9s 89 [[61  3  1  3]
+1790.9s 90 [ 7 16  1  3]
+1790.9s 91 [ 6  1 32  2]
+1790.9s 92 [ 7  3  1  7]]
+1790.9s 93 Validation Loss: {'avg_loss': 1.0740850884527064, 'accuracy': 0.7532467532467533, 'precision': 0.7524558410686777, 'recall': 0.7532467532467533, 'f1_score': 0.7475359206157832}
+1790.9s 94 ----Epoch 10/10----
+1976.2s 95 Training Loss: 0.0496
+1984.2s 96 Confusion Matrix:
+1984.2s 97 [[60  3  1  4]
+1984.2s 98 [ 6 17  1  3]
+1984.2s 99 [ 4  1 32  4]
+1984.2s 100 [ 7  3  1  7]]
+1984.2s 101 Validation Loss: {'avg_loss': 1.1023738228489095, 'accuracy': 0.7532467532467533, 'precision': 0.7571280991735537, 'recall': 0.7532467532467533, 'f1_score': 0.7519621938859689}
+1986.3s 102 Model training time: 1933.5119488239288
+1992.4s 103 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+1992.4s 104 warn(
+1992.4s 105 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+1992.8s 106 [NbConvertApp] Writing 76699 bytes to __notebook__.ipynb
+1994.1s 107 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+1994.1s 108 warn(
+1994.2s 109 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+1995.0s 110 [NbConvertApp] Writing 360544 bytes to __results__.html

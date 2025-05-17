@@ -1,0 +1,77 @@
+7.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.7s 3 0.00s - to python to disable frozen modules.
+7.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.4s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.4s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.4s 7 0.00s - to python to disable frozen modules.
+8.4s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+29.7s 9 2025-05-17 09:09:58.749344: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+29.7s 10 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+29.7s 11 E0000 00:00:1747472998.981904      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+29.7s 12 E0000 00:00:1747472999.046334      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+29.9s 13 2025-05-17 09:09:58.749344: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+29.9s 14 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+29.9s 15 E0000 00:00:1747472998.981904      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+29.9s 16 E0000 00:00:1747472999.046334      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+43.1s 17 Prompting Mode: zero-shot-direct
+44.3s 18 You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+111.0s 19 Confusion Matrix:
+111.0s 20 [[63  3  0  2]
+111.0s 21 [16 10  0  1]
+111.0s 22 [37  2  0  2]
+111.0s 23 [16  2  0  0]]
+111.0s 24 Total Inference Time: 41.72 seconds
+111.0s 25 Accuracy: 0.4740
+111.0s 26 Precision: 0.3139
+111.0s 27 Recall: 0.4740
+111.0s 28 F1 Score: 0.3579
+111.0s 29 {'inference_time': 41.7239887714386, 'accuracy': 0.474025974025974, 'precision': 0.31387596360858394, 'recall': 0.474025974025974, 'f1_score': 0.357874852420307}
+111.0s 30 -----------------------------------------------------------
+111.0s 31 Prompting Mode: zero-shot-role-play
+154.0s 32 Confusion Matrix:
+154.0s 33 [[60  6  0  2]
+154.0s 34 [10 17  0  0]
+154.0s 35 [32  4  0  5]
+154.0s 36 [14  4  0  0]]
+154.0s 37 Total Inference Time: 40.57 seconds
+154.0s 38 Accuracy: 0.5000
+154.0s 39 Precision: 0.3245
+154.0s 40 Recall: 0.5000
+154.0s 41 F1 Score: 0.3907
+154.0s 42 {'inference_time': 40.57264232635498, 'accuracy': 0.5, 'precision': 0.3245380870519914, 'recall': 0.5, 'f1_score': 0.3907494304795654}
+154.0s 43 -----------------------------------------------------------
+154.0s 44 Prompting Mode: few-shot-direct
+209.4s 45 Confusion Matrix:
+209.4s 46 [[55  1  2 10]
+209.4s 47 [ 7  3  1 16]
+209.4s 48 [11  0  6 24]
+209.4s 49 [13  0  1  4]]
+209.4s 50 Total Inference Time: 52.84 seconds
+209.4s 51 Accuracy: 0.4416
+209.4s 52 Precision: 0.5823
+209.4s 53 Recall: 0.4416
+209.4s 54 F1 Score: 0.4250
+209.4s 55 {'inference_time': 52.83831024169922, 'accuracy': 0.44155844155844154, 'precision': 0.5822838014698479, 'recall': 0.44155844155844154, 'f1_score': 0.4249629470556551}
+209.4s 56 -----------------------------------------------------------
+209.4s 57 Prompting Mode: few-shot-role-play
+264.4s 58 Confusion Matrix:
+264.4s 59 [[56  0  1 11]
+264.4s 60 [ 7  2  6 12]
+264.4s 61 [16  1  5 19]
+264.4s 62 [13  0  0  5]]
+264.4s 63 Total Inference Time: 53.10 seconds
+264.4s 64 Accuracy: 0.4416
+264.4s 65 Precision: 0.5090
+264.4s 66 Recall: 0.4416
+264.4s 67 F1 Score: 0.4007
+264.4s 68 {'inference_time': 53.097389459609985, 'accuracy': 0.44155844155844154, 'precision': 0.509022930507667, 'recall': 0.44155844155844154, 'f1_score': 0.4006823365313931}
+264.4s 69 -----------------------------------------------------------
+269.9s 70 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+269.9s 71 warn(
+269.9s 72 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+270.2s 73 [NbConvertApp] Writing 103504 bytes to __notebook__.ipynb
+271.6s 74 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+271.6s 75 warn(
+271.6s 76 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+272.4s 77 [NbConvertApp] Writing 380940 bytes to __results__.html
