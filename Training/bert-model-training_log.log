@@ -1,109 +1,277 @@
-6.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
-6.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
-6.0s 3 0.00s - to python to disable frozen modules.
-6.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
-6.7s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
-6.7s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
-6.7s 7 0.00s - to python to disable frozen modules.
-6.7s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
-24.0s 9 2025-05-17 12:19:56.245828: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
-24.0s 10 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-24.0s 11 E0000 00:00:1747484396.415997      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-24.0s 12 E0000 00:00:1747484396.467707      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-24.2s 13 2025-05-17 12:19:56.245828: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
-24.2s 14 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-24.2s 15 E0000 00:00:1747484396.415997      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-24.2s 16 E0000 00:00:1747484396.467707      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-38.5s 17 Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
-40.7s 18 Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
-40.7s 19 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-41.2s 20 START TRAINING:
-41.2s 21 ----Epoch 1/10----
-73.5s 22 Training Loss: 1.1284
-78.4s 23 Confusion Matrix:
-78.4s 24 [[56  0 12  0]
-78.4s 25 [25  0  2  0]
-78.4s 26 [ 1  0 40  0]
-78.4s 27 [14  0  4  0]]
-78.4s 28 Validation Loss: {'avg_loss': 0.9162574529647827, 'accuracy': 0.6233766233766234, 'precision': 0.4411852515300792, 'recall': 0.6233766233766234, 'f1_score': 0.516690503386734}
-78.4s 29 ----Epoch 2/10----
-111.4s 30 Training Loss: 0.9457
-116.6s 31 Confusion Matrix:
-116.6s 32 [[55  0 13  0]
-116.6s 33 [24  0  3  0]
-116.6s 34 [ 1  0 40  0]
-116.6s 35 [14  0  4  0]]
-116.6s 36 Validation Loss: {'avg_loss': 0.9211912453174591, 'accuracy': 0.6168831168831169, 'precision': 0.43584784010315925, 'recall': 0.6168831168831169, 'f1_score': 0.5107018638371774}
-116.6s 37 ----Epoch 3/10----
-152.0s 38 Training Loss: 0.7959
-158.0s 39 Confusion Matrix:
-158.0s 40 [[57  0 11  0]
-158.0s 41 [25  0  2  0]
-158.0s 42 [ 1  0 40  0]
-158.0s 43 [14  0  4  0]]
-158.0s 44 Validation Loss: {'avg_loss': 0.8437245130538941, 'accuracy': 0.6298701298701299, 'precision': 0.4463031994231126, 'recall': 0.6298701298701299, 'f1_score': 0.5224104281618196}
-158.0s 45 ----Epoch 4/10----
-195.0s 46 Training Loss: 0.6352
-200.7s 47 Confusion Matrix:
-200.7s 48 [[54 13  1  0]
-200.7s 49 [12 13  2  0]
-200.7s 50 [20  1 19  1]
-200.7s 51 [11  4  0  3]]
-200.7s 52 Validation Loss: {'avg_loss': 1.0785390257835388, 'accuracy': 0.577922077922078, 'precision': 0.6369307899827596, 'recall': 0.577922077922078, 'f1_score': 0.5600765508065104}
-200.7s 53 ----Epoch 5/10----
-236.8s 54 Training Loss: 0.4441
-242.7s 55 Confusion Matrix:
-242.7s 56 [[62  0  6  0]
-242.7s 57 [18  7  2  0]
-242.7s 58 [ 1  0 40  0]
-242.7s 59 [14  0  3  1]]
-242.7s 60 Validation Loss: {'avg_loss': 0.8887101233005523, 'accuracy': 0.7142857142857143, 'precision': 0.7891935721657084, 'recall': 0.7142857142857143, 'f1_score': 0.6519131114523735}
-242.7s 61 ----Epoch 6/10----
-279.2s 62 Training Loss: 0.2010
-285.0s 63 Confusion Matrix:
-285.0s 64 [[48 16  1  3]
-285.0s 65 [ 8 17  0  2]
-285.0s 66 [ 6  2 29  4]
-285.0s 67 [ 6  5  1  6]]
-285.0s 68 Validation Loss: {'avg_loss': 0.9064061760902404, 'accuracy': 0.6493506493506493, 'precision': 0.68201193967323, 'recall': 0.6493506493506493, 'f1_score': 0.6576280835100374}
-285.0s 69 ----Epoch 7/10----
-321.2s 70 Training Loss: 0.0869
-327.0s 71 Confusion Matrix:
-327.0s 72 [[54  5  3  6]
-327.0s 73 [ 8 12  2  5]
-327.0s 74 [ 2  0 37  2]
-327.0s 75 [ 4  2  3  9]]
-327.0s 76 Validation Loss: {'avg_loss': 0.9570696473121643, 'accuracy': 0.7272727272727273, 'precision': 0.7280998639850315, 'recall': 0.7272727272727273, 'f1_score': 0.7238053655141622}
-327.0s 77 ----Epoch 8/10----
-363.4s 78 Training Loss: 0.0451
-369.2s 79 Confusion Matrix:
-369.2s 80 [[54  6  3  5]
-369.2s 81 [ 8 17  2  0]
-369.2s 82 [ 4  1 36  0]
-369.2s 83 [ 7  3  3  5]]
-369.2s 84 Validation Loss: {'avg_loss': 1.0407735705375671, 'accuracy': 0.7272727272727273, 'precision': 0.7132910675874561, 'recall': 0.7272727272727273, 'f1_score': 0.7158642180276367}
-369.2s 85 ----Epoch 9/10----
-405.4s 86 Training Loss: 0.0238
-411.3s 87 Confusion Matrix:
-411.3s 88 [[56  4  3  5]
-411.3s 89 [ 9 16  2  0]
-411.3s 90 [ 3  0 37  1]
-411.3s 91 [ 7  3  3  5]]
-411.3s 92 Validation Loss: {'avg_loss': 1.0374751284718513, 'accuracy': 0.7402597402597403, 'precision': 0.7236939696228233, 'recall': 0.7402597402597403, 'f1_score': 0.7274331660903068}
-411.3s 93 ----Epoch 10/10----
-447.5s 94 Training Loss: 0.0203
-453.3s 95 Confusion Matrix:
-453.3s 96 [[56  4  3  5]
-453.3s 97 [ 9 16  2  0]
-453.3s 98 [ 3  0 37  1]
-453.3s 99 [ 7  3  3  5]]
-453.3s 100 Validation Loss: {'avg_loss': 1.0376562744379043, 'accuracy': 0.7402597402597403, 'precision': 0.7236939696228233, 'recall': 0.7402597402597403, 'f1_score': 0.7274331660903068}
-454.4s 101 Model training time: 413.40427446365356
-460.0s 102 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
-460.0s 103 warn(
-460.0s 104 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
-460.3s 105 [NbConvertApp] Writing 77381 bytes to __notebook__.ipynb
-461.6s 106 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
-461.6s 107 warn(
-461.6s 108 [NbConvertApp] Converting notebook __notebook__.ipynb to html
-462.3s 109 [NbConvertApp] Writing 360772 bytes to __results__.html
+5.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+5.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+5.7s 3 0.00s - to python to disable frozen modules.
+5.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.4s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.4s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.4s 7 0.00s - to python to disable frozen modules.
+6.4s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+23.8s 9 2025-05-17 14:06:39.997801: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+23.8s 10 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+23.8s 11 E0000 00:00:1747490800.181538      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+23.8s 12 E0000 00:00:1747490800.234919      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+24.0s 13 2025-05-17 14:06:39.997801: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+24.0s 14 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+24.0s 15 E0000 00:00:1747490800.181538      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+24.0s 16 E0000 00:00:1747490800.234919      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+37.8s 17 Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+40.0s 18 Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+40.0s 19 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+40.6s 20 START TRAINING:
+40.6s 21 ----Epoch 1/10----
+71.6s 22 Training Loss: 1.1180
+76.0s 23 Confusion Matrix:
+76.0s 24 [[52  0 16  0]
+76.0s 25 [24  0  3  0]
+76.0s 26 [ 0  0 41  0]
+76.0s 27 [12  0  6  0]]
+76.0s 28 Validation Loss: {'avg_loss': 0.9936385095119477, 'accuracy': 0.6038961038961039, 'precision': 0.4263085399449036, 'recall': 0.6038961038961039, 'f1_score': 0.4984019096168629}
+76.0s 29 ----Epoch 2/10----
+107.3s 30 Training Loss: 0.8638
+112.1s 31 Confusion Matrix:
+112.1s 32 [[59  0  9  0]
+112.1s 33 [25  0  2  0]
+112.1s 34 [ 3  0 38  0]
+112.1s 35 [15  0  3  0]]
+112.1s 36 Validation Loss: {'avg_loss': 0.9052462875843048, 'accuracy': 0.6298701298701299, 'precision': 0.44996669996669997, 'recall': 0.6298701298701299, 'f1_score': 0.5240608853512079}
+112.1s 37 ----Epoch 3/10----
+145.0s 38 Training Loss: 0.7272
+150.1s 39 Confusion Matrix:
+150.1s 40 [[57  4  7  0]
+150.1s 41 [23  2  2  0]
+150.1s 42 [ 1  0 40  0]
+150.1s 43 [15  0  3  0]]
+150.1s 44 Validation Loss: {'avg_loss': 0.8901284635066986, 'accuracy': 0.6428571428571429, 'precision': 0.5254120879120879, 'recall': 0.6428571428571429, 'f1_score': 0.5572067348049038}
+150.1s 45 ----Epoch 4/10----
+184.0s 46 Training Loss: 0.6606
+188.9s 47 Confusion Matrix:
+188.9s 48 [[62  5  1  0]
+188.9s 49 [19  6  2  0]
+188.9s 50 [ 7  0 34  0]
+188.9s 51 [14  0  3  1]]
+188.9s 52 Validation Loss: {'avg_loss': 0.85940500497818, 'accuracy': 0.6688311688311688, 'precision': 0.707211727666273, 'recall': 0.6688311688311688, 'f1_score': 0.6132519851818098}
+188.9s 53 ----Epoch 5/10----
+222.1s 54 Training Loss: 0.5817
+227.0s 55 Confusion Matrix:
+227.0s 56 [[67  0  1  0]
+227.0s 57 [22  3  2  0]
+227.0s 58 [21  0 20  0]
+227.0s 59 [16  0  2  0]]
+227.0s 60 Validation Loss: {'avg_loss': 1.1711558878421784, 'accuracy': 0.5844155844155844, 'precision': 0.6231086373943517, 'recall': 0.5844155844155844, 'f1_score': 0.501412707879437}
+227.0s 61 ----Epoch 6/10----
+260.6s 62 Training Loss: 0.4749
+265.6s 63 Confusion Matrix:
+265.6s 64 [[56  9  2  1]
+265.6s 65 [16  9  2  0]
+265.6s 66 [ 6  1 34  0]
+265.6s 67 [10  3  3  2]]
+265.6s 68 Validation Loss: {'avg_loss': 0.9129490673542022, 'accuracy': 0.6558441558441559, 'precision': 0.6514167650531286, 'recall': 0.6558441558441559, 'f1_score': 0.6244639714027469}
+265.6s 69 ----Epoch 7/10----
+299.1s 70 Training Loss: 0.3856
+304.0s 71 Confusion Matrix:
+304.0s 72 [[57  7  4  0]
+304.0s 73 [16  9  2  0]
+304.0s 74 [ 3  1 37  0]
+304.0s 75 [12  2  3  1]]
+304.0s 76 Validation Loss: {'avg_loss': 0.9331089735031128, 'accuracy': 0.6753246753246753, 'precision': 0.7000856435014955, 'recall': 0.6753246753246753, 'f1_score': 0.6300378256110916}
+304.0s 77 ----Epoch 8/10----
+337.6s 78 Training Loss: 0.2954
+342.6s 79 Confusion Matrix:
+342.6s 80 [[54  7  5  2]
+342.6s 81 [15 10  2  0]
+342.6s 82 [ 2  1 38  0]
+342.6s 83 [ 8  3  3  4]]
+342.6s 84 Validation Loss: {'avg_loss': 0.9740008294582367, 'accuracy': 0.6883116883116883, 'precision': 0.674003174342234, 'recall': 0.6883116883116883, 'f1_score': 0.6637689586267894}
+342.6s 85 ----Epoch 9/10----
+376.2s 86 Training Loss: 0.2272
+381.2s 87 Confusion Matrix:
+381.2s 88 [[57  6  3  2]
+381.2s 89 [16  9  2  0]
+381.2s 90 [ 4  1 36  0]
+381.2s 91 [ 8  3  3  4]]
+381.2s 92 Validation Loss: {'avg_loss': 1.007361763715744, 'accuracy': 0.6883116883116883, 'precision': 0.6749021313614615, 'recall': 0.6883116883116883, 'f1_score': 0.662086336510889}
+381.2s 93 ----Epoch 10/10----
+414.7s 94 Training Loss: 0.1960
+419.7s 95 Confusion Matrix:
+419.7s 96 [[58  6  2  2]
+419.7s 97 [16  9  1  1]
+419.7s 98 [ 5  1 34  1]
+419.7s 99 [ 9  3  3  3]]
+419.7s 100 Validation Loss: {'avg_loss': 1.0728964149951934, 'accuracy': 0.6753246753246753, 'precision': 0.6504671507576497, 'recall': 0.6753246753246753, 'f1_score': 0.6485004742975756}
+420.9s 101 Model training time: 380.51507472991943
+421.2s 102 Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+421.2s 103 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+421.7s 104 START TRAINING:
+421.7s 105 ----Epoch 1/10----
+455.3s 106 Training Loss: 1.1420
+460.3s 107 Confusion Matrix:
+460.3s 108 [[68  0  0  0]
+460.3s 109 [27  0  0  0]
+460.3s 110 [40  0  1  0]
+460.3s 111 [18  0  0  0]]
+460.3s 112 Validation Loss: {'avg_loss': 1.076401823759079, 'accuracy': 0.44805194805194803, 'precision': 0.46248196248196255, 'recall': 0.44805194805194803, 'f1_score': 0.2844060701203558}
+460.3s 113 ----Epoch 2/10----
+493.8s 114 Training Loss: 0.9738
+498.8s 115 Confusion Matrix:
+498.8s 116 [[56  0 12  0]
+498.8s 117 [25  0  2  0]
+498.8s 118 [ 4  0 37  0]
+498.8s 119 [15  0  3  0]]
+498.8s 120 Validation Loss: {'avg_loss': 0.9454810440540313, 'accuracy': 0.6038961038961039, 'precision': 0.4296921596921597, 'recall': 0.6038961038961039, 'f1_score': 0.5017543859649122}
+498.8s 121 ----Epoch 3/10----
+532.1s 122 Training Loss: 0.9501
+537.1s 123 Confusion Matrix:
+537.1s 124 [[49  0 19  0]
+537.1s 125 [23  0  4  0]
+537.1s 126 [ 0  0 41  0]
+537.1s 127 [10  0  8  0]]
+537.1s 128 Validation Loss: {'avg_loss': 1.0764041364192962, 'accuracy': 0.5844155844155844, 'precision': 0.4154634322317249, 'recall': 0.5844155844155844, 'f1_score': 0.4816810328314753}
+537.1s 129 ----Epoch 4/10----
+570.5s 130 Training Loss: 0.8887
+575.5s 131 Confusion Matrix:
+575.5s 132 [[63  1  4  0]
+575.5s 133 [23  3  1  0]
+575.5s 134 [10  0 31  0]
+575.5s 135 [17  0  1  0]]
+575.5s 136 Validation Loss: {'avg_loss': 0.9244051516056061, 'accuracy': 0.6298701298701299, 'precision': 0.6007328297151306, 'recall': 0.6298701298701299, 'f1_score': 0.5529387442593645}
+575.5s 137 ----Epoch 5/10----
+609.0s 138 Training Loss: 0.7601
+613.9s 139 Confusion Matrix:
+613.9s 140 [[53 13  2  0]
+613.9s 141 [10 15  2  0]
+613.9s 142 [16  0 25  0]
+613.9s 143 [16  2  0  0]]
+613.9s 144 Validation Loss: {'avg_loss': 0.9523855686187744, 'accuracy': 0.6038961038961039, 'precision': 0.5635173356588965, 'recall': 0.6038961038961039, 'f1_score': 0.5695915551766837}
+613.9s 145 ----Epoch 6/10----
+647.3s 146 Training Loss: 0.5841
+652.3s 147 Confusion Matrix:
+652.3s 148 [[57  6  4  1]
+652.3s 149 [14 11  2  0]
+652.3s 150 [ 7  0 34  0]
+652.3s 151 [11  1  1  5]]
+652.3s 152 Validation Loss: {'avg_loss': 0.7959940552711486, 'accuracy': 0.6948051948051948, 'precision': 0.708120531154239, 'recall': 0.6948051948051948, 'f1_score': 0.6758168583009347}
+652.3s 153 ----Epoch 7/10----
+685.7s 154 Training Loss: 0.3861
+690.7s 155 Confusion Matrix:
+690.7s 156 [[61  5  2  0]
+690.7s 157 [13 12  2  0]
+690.7s 158 [10  0 31  0]
+690.7s 159 [13  3  1  1]]
+690.7s 160 Validation Loss: {'avg_loss': 1.0304722964763642, 'accuracy': 0.6818181818181818, 'precision': 0.7290158581395695, 'recall': 0.6818181818181818, 'f1_score': 0.6426866608859308}
+690.7s 161 ----Epoch 8/10----
+724.2s 162 Training Loss: 0.2110
+729.1s 163 Confusion Matrix:
+729.1s 164 [[62  2  3  1]
+729.1s 165 [15  9  2  1]
+729.1s 166 [ 7  0 33  1]
+729.1s 167 [12  1  1  4]]
+729.1s 168 Validation Loss: {'avg_loss': 1.141677862405777, 'accuracy': 0.7012987012987013, 'precision': 0.7087317444460302, 'recall': 0.7012987012987013, 'f1_score': 0.6718257961550644}
+729.1s 169 ----Epoch 9/10----
+762.6s 170 Training Loss: 0.1006
+767.6s 171 Confusion Matrix:
+767.6s 172 [[51  8  6  3]
+767.6s 173 [ 9 15  2  1]
+767.6s 174 [ 2  0 38  1]
+767.6s 175 [ 8  3  1  6]]
+767.6s 176 Validation Loss: {'avg_loss': 1.050924289226532, 'accuracy': 0.7142857142857143, 'precision': 0.7018629753777583, 'recall': 0.7142857142857143, 'f1_score': 0.7039042545733882}
+767.6s 177 ----Epoch 10/10----
+800.9s 178 Training Loss: 0.0626
+805.9s 179 Confusion Matrix:
+805.9s 180 [[52  8  5  3]
+805.9s 181 [12 13  2  0]
+805.9s 182 [ 3  0 37  1]
+805.9s 183 [ 9  3  1  5]]
+805.9s 184 Validation Loss: {'avg_loss': 1.0683410257101058, 'accuracy': 0.6948051948051948, 'precision': 0.6809248500037973, 'recall': 0.6948051948051948, 'f1_score': 0.6806594378413804}
+806.5s 185 Model training time: 385.0352556705475
+807.4s 186 Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+807.4s 187 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+807.8s 188 START TRAINING:
+807.8s 189 ----Epoch 1/10----
+841.3s 190 Training Loss: 1.1168
+846.3s 191 Confusion Matrix:
+846.3s 192 [[52  2 14  0]
+846.3s 193 [25  0  2  0]
+846.3s 194 [ 4  0 37  0]
+846.3s 195 [13  0  5  0]]
+846.3s 196 Validation Loss: {'avg_loss': 0.9964671552181243, 'accuracy': 0.577922077922078, 'precision': 0.4141051538336938, 'recall': 0.577922077922078, 'f1_score': 0.4824726339877854}
+846.3s 197 ----Epoch 2/10----
+879.8s 198 Training Loss: 0.9600
+884.8s 199 Confusion Matrix:
+884.8s 200 [[55  0 13  0]
+884.8s 201 [23  0  4  0]
+884.8s 202 [ 0  0 41  0]
+884.8s 203 [10  0  8  0]]
+884.8s 204 Validation Loss: {'avg_loss': 1.0387320935726165, 'accuracy': 0.6233766233766234, 'precision': 0.4413616686343959, 'recall': 0.6233766233766234, 'f1_score': 0.5153849265998799}
+884.8s 205 ----Epoch 3/10----
+918.0s 206 Training Loss: 0.8848
+923.0s 207 Confusion Matrix:
+923.0s 208 [[62  0  6  0]
+923.0s 209 [25  0  2  0]
+923.0s 210 [ 5  0 36  0]
+923.0s 211 [15  0  3  0]]
+923.0s 212 Validation Loss: {'avg_loss': 0.8856501281261444, 'accuracy': 0.6363636363636364, 'precision': 0.4597800290781003, 'recall': 0.6363636363636364, 'f1_score': 0.5307033226513747}
+923.0s 213 ----Epoch 4/10----
+956.4s 214 Training Loss: 0.7538
+961.4s 215 Confusion Matrix:
+961.4s 216 [[56  7  5  0]
+961.4s 217 [17  8  2  0]
+961.4s 218 [ 4  1 36  0]
+961.4s 219 [13  2  3  0]]
+961.4s 220 Validation Loss: {'avg_loss': 0.8696880280971527, 'accuracy': 0.6493506493506493, 'precision': 0.5610264132003262, 'recall': 0.6493506493506493, 'f1_score': 0.5956725073268068}
+961.4s 221 ----Epoch 5/10----
+994.9s 222 Training Loss: 0.5263
+999.9s 223 Confusion Matrix:
+999.9s 224 [[51  6  7  4]
+999.9s 225 [16  8  2  1]
+999.9s 226 [ 1  0 38  2]
+999.9s 227 [ 8  2  6  2]]
+999.9s 228 Validation Loss: {'avg_loss': 0.9424401819705963, 'accuracy': 0.6428571428571429, 'precision': 0.6008299049510568, 'recall': 0.6428571428571429, 'f1_score': 0.6105765008535916}
+999.9s 229 ----Epoch 6/10----
+1033.3s 230 Training Loss: 0.2805
+1038.3s 231 Confusion Matrix:
+1038.3s 232 [[53  5  6  4]
+1038.3s 233 [14 11  1  1]
+1038.3s 234 [ 3  0 38  0]
+1038.3s 235 [ 9  3  2  4]]
+1038.3s 236 Validation Loss: {'avg_loss': 1.1257057309150695, 'accuracy': 0.6883116883116883, 'precision': 0.6649400537801178, 'recall': 0.6883116883116883, 'f1_score': 0.6668148138060213}
+1038.3s 237 ----Epoch 7/10----
+1071.6s 238 Training Loss: 0.1470
+1076.6s 239 Confusion Matrix:
+1076.6s 240 [[55  6  1  6]
+1076.6s 241 [17  7  1  2]
+1076.6s 242 [ 6  0 25 10]
+1076.6s 243 [11  2  2  3]]
+1076.6s 244 Validation Loss: {'avg_loss': 1.5371316611766814, 'accuracy': 0.5844155844155844, 'precision': 0.6009008316087521, 'recall': 0.5844155844155844, 'f1_score': 0.5759627088107525}
+1076.6s 245 ----Epoch 8/10----
+1110.0s 246 Training Loss: 0.0375
+1114.9s 247 Confusion Matrix:
+1114.9s 248 [[50  7  3  8]
+1114.9s 249 [13 10  1  3]
+1114.9s 250 [ 2  0 33  6]
+1114.9s 251 [ 8  2  3  5]]
+1114.9s 252 Validation Loss: {'avg_loss': 1.4925728559494018, 'accuracy': 0.6363636363636364, 'precision': 0.6409206355354025, 'recall': 0.6363636363636364, 'f1_score': 0.6355421311480516}
+1114.9s 253 ----Epoch 9/10----
+1148.3s 254 Training Loss: 0.0151
+1153.2s 255 Confusion Matrix:
+1153.2s 256 [[51  9  1  7]
+1153.2s 257 [14 10  1  2]
+1153.2s 258 [ 5  0 30  6]
+1153.2s 259 [ 9  2  2  5]]
+1153.2s 260 Validation Loss: {'avg_loss': 1.6298376142978668, 'accuracy': 0.6233766233766234, 'precision': 0.6326775819648918, 'recall': 0.6233766233766234, 'f1_score': 0.6231851660691619}
+1153.2s 261 ----Epoch 10/10----
+1186.5s 262 Training Loss: 0.0089
+1191.5s 263 Confusion Matrix:
+1191.5s 264 [[51  8  2  7]
+1191.5s 265 [14 10  1  2]
+1191.5s 266 [ 5  0 31  5]
+1191.5s 267 [ 9  2  3  4]]
+1191.5s 268 Validation Loss: {'avg_loss': 1.6073030650615692, 'accuracy': 0.6233766233766234, 'precision': 0.621753802133549, 'recall': 0.6233766233766234, 'f1_score': 0.6185894724757078}
+1192.1s 269 Model training time: 384.57464480400085
+1197.0s 270 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+1197.0s 271 warn(
+1197.0s 272 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+1197.3s 273 [NbConvertApp] Writing 91678 bytes to __notebook__.ipynb
+1198.6s 274 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+1198.6s 275 warn(
+1198.6s 276 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+1199.3s 277 [NbConvertApp] Writing 382405 bytes to __results__.html
