@@ -8,7 +8,7 @@ from sentence_transformers import SentenceTransformer, InputExample, losses
 # === Parameters ===
 TRAIN_CLAIMS_PATH = "data/train-claims.json"
 EVIDENCE_PATH = "data/evidence.json"
-FINETUNED_MODEL_PATH = "models/bge-finetuned"
+FINETUNED_MODEL_PATH = "Pretrained_Model/bge-finetuned"
 BASE_MODEL_NAME = "BAAI/bge-base-en-v1.5"
 
 EPOCHS = 1
